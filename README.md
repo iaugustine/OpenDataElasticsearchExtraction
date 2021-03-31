@@ -5,22 +5,24 @@ Violations dataset from NYC open data to an Elasticsearch instance
 hosted on AWS. Once the data has been extracted, it can be visualized
 in Kibana.<br>
 
-Folder Structure:
-project01/
-+-- Dockerfile
-+-- requirements.txt
-+-- src/
-+-- +-- main.py
-+-- assets/
-+-- +-- kibanadashboard.png
-+-- README
+Folder Structure:<br>
+project01/<br>
++-- Dockerfile<br>
++-- requirements.txt<br>
++-- src/<br>
++-- +-- main.py<br>
++-- assets/<br>
++-- +-- kibanadashboard.png<br>
++-- README<br>
 
-![alt text](https://github.com/iaugustine/OpenDataElasticsearchExtraction/blob/main/project01/assets/kibanadashboard.png?raw=true)
 
-Dockerfile: Contains the instructions to build a docker container for the application.
-Requirements.txt: Contains list of dependencies for the application
-main.py: Python script which connects to NYC Open Data and an elasticsearch instance and extracts and loads data.
-kibanadashboard.png: A sample visualization dashboard once the recordsa are loaded.
+
+Dockerfile: Contains the instructions to build a docker container for the application.<br>
+Requirements.txt: Contains list of dependencies for the application<br>
+main.py: Python script which connects to NYC Open Data and an elasticsearch instance and extracts and loads data.<br>
+kibanadashboard.png: A sample visualization dashboard once the recordsa are loaded.<br>
+
+![alt text](https://github.com/iaugustine/OpenDataElasticsearchExtraction/blob/main/project01/assets/kibanadashboard.png?raw=true)<br>
 
 <br>
 Pre-Requisites:
