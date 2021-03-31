@@ -63,14 +63,14 @@ b. Page_size: Size of each page which is to be fetched.<br>
 be executed and the variable values from step 4 and 5 must be
 substituted:<br>
 docker run \<br>
--e DATASET_ID="nc67-uf89" \<br>
--e APP_TOKEN="<YOUR APP_TOKEN>" \<br>
--e ES_HOST="<YOUR ES HOST>" \<br>
--e ES_USERNAME="<USER ID>" \<br>
--e ES_PASSWORD="<PASSWORD>" \<br>
---network="host" \<br>
-bigdata1:1.0 --num_pages=<NUMBER OF PAGES NEEDED><br>
---page_size=<REQUIRED PAGE SIZE><br>
+-e DATASET_ID="nc67-uf89" \
+-e APP_TOKEN="YOUR APP_TOKEN" \
+-e ES_HOST="YOUR ES HOST" \
+-e ES_USERNAME="YOUR USER ID" \
+-e ES_PASSWORD="YOUR PASSWORD" \
+--network="host" \
+bigdata1:1.0 --num_pages=NUMBER_OF_PAGES_NEEDED
+--page_size=REQUIRED_PAGE_SIZE
 On running the above command the program will begin execution and
 will extract the data from NYC Open data.<br>
 7. In order to view this data, you will need to login to the
