@@ -1,0 +1,5 @@
+argparse==1.4.0
+requests==2.25.1
+elasticsearch==7.12.0
+pandas==1.2.3
+sodapy==2.1.0
