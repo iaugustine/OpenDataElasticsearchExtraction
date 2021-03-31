@@ -26,15 +26,19 @@ kibanadashboard.png: A sample visualization dashboard once the recordsa are load
 
 <br>
 Pre-Requisites:
+<br>
+<br>
 1. Machine with docker installed. Eg: EC2 instance or localhost with
-docker installed.
+docker installed.<br>
 2. Elasticsearch instance up and running. This could be in the cloud
 or on a machine. The important factors are the availability of
 the ES host address for access, and a username and password for
-authentication.
+authentication.<br>
 3. APP token generated from the Socrata open data API to access and
-extract data.
+extract data.<br>
+<br><br>
 <br>
+
 How to run the application:
 <br>
 1. Extract the zipped files.<br>
