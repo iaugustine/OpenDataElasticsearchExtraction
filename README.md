@@ -15,7 +15,8 @@ authentication.
 3. APP token generated from the Socrata open data API to access and
 extract data.
 <br>
-**How to run the application:**
+How to run the application:
+<br>
 1. Extract the zipped files.
 2. In the terminal, navigate to the directory of the unzipped file.
 3. Run the following command:
