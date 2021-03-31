@@ -17,49 +17,49 @@ extract data.
 <br>
 How to run the application:
 <br>
-1. Extract the zipped files.
-2. In the terminal, navigate to the directory of the unzipped file.
-3. Run the following command:
-docker build -t bigdata1:1.0 project01/
+1. Extract the zipped files.<br>
+2. In the terminal, navigate to the directory of the unzipped file.<br>
+3. Run the following command:<br>
+docker build -t bigdata1:1.0 project01/<br>
 This will build a docker image based on the instructions in the
-Dockerfile which exists in the project01 folder.
+Dockerfile which exists in the project01 folder.<br>
 4. Once the docker image is built, we can run a docker container
 which will execute the application. In the application, we will
-have to pass a few environment variables. They are:
-a. DATASET_ID: For OPCV, the id is ‘nc67-uf89’
-b. ES_USERNAME: The ES username for access
-c. ES_PASSWORD: The ES password for access
-d. APP_TOKEN: APP token generated for the Socrata Open Data API
-e. ES_HOST: The address of the elasticsearch host to be used.
+have to pass a few environment variables. They are:<br>
+a. DATASET_ID: For OPCV, the id is ‘nc67-uf89’<br>
+b. ES_USERNAME: The ES username for access<br>
+c. ES_PASSWORD: The ES password for access<br>
+d. APP_TOKEN: APP token generated for the Socrata Open Data API<br>
+e. ES_HOST: The address of the elasticsearch host to be used.<br>
 5. In addition to the above environment variables, we will also pass
-2 command line arguments:
-a. Num_pages: Number of pages of the data to fetch
-b. Page_size: Size of each page which is to be fetched.
+2 command line arguments:<br>
+a. Num_pages: Number of pages of the data to fetch<br>
+b. Page_size: Size of each page which is to be fetched.<br>
 6. In order to run the docker container, the following command must
 be executed and the variable values from step 4 and 5 must be
-substituted:
-docker run \
--e DATASET_ID="nc67-uf89" \
--e APP_TOKEN="<YOUR APP_TOKEN>" \
--e ES_HOST="<YOUR ES HOST>" \
--e ES_USERNAME="<USER ID>" \
--e ES_PASSWORD="<PASSWORD>" \
---network="host" \
-bigdata1:1.0 --num_pages=<NUMBER OF PAGES NEEDED>
---page_size=<REQUIRED PAGE SIZE>
+substituted:<br>
+docker run \<br>
+-e DATASET_ID="nc67-uf89" \<br>
+-e APP_TOKEN="<YOUR APP_TOKEN>" \<br>
+-e ES_HOST="<YOUR ES HOST>" \<br>
+-e ES_USERNAME="<USER ID>" \<br>
+-e ES_PASSWORD="<PASSWORD>" \<br>
+--network="host" \<br>
+bigdata1:1.0 --num_pages=<NUMBER OF PAGES NEEDED><br>
+--page_size=<REQUIRED PAGE SIZE><br>
 On running the above command the program will begin execution and
-will extract the data from NYC Open data.
+will extract the data from NYC Open data.<br>
 7. In order to view this data, you will need to login to the
-Elasticsearch instance.
+Elasticsearch instance.<br>
 8. Once logged in to the elasticsearch instance, navigate to ‘Stack
-Management’ and click on Index Patterns -> Create Index pattern
+Management’ and click on Index Patterns -> Create Index pattern<br>
 9. Enter the characters ‘my*’ and you will see an index by the name
 ‘my-index-1’. This is the index to which the program will write
 the data to. Click on next and select issue_date as the time
-field with which to view the data.
-10. Click on create index pattern.
+field with which to view the data.<br>
+10. Click on create index pattern.<br>
 11. Navigate to Discover and search for the index pattern ‘my*’
-from the top left corner.
+from the top left corner.<br>
 12. Once you have navigated to Discover, you can view the data as
 it is being loaded in Elasticsearch. (Kindly adjust the time
-filter to the past 22 years to view the data)
+filter to the past 22 years to view the data)<br>
