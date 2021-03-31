@@ -62,7 +62,7 @@ b. Page_size: Size of each page which is to be fetched.<br>
 6. In order to run the docker container, the following command must
 be executed and the variable values from step 4 and 5 must be
 substituted:<br>
-docker run \<br>
+docker run \
 -e DATASET_ID="nc67-uf89" \
 -e APP_TOKEN="YOUR APP_TOKEN" \
 -e ES_HOST="YOUR ES HOST" \
@@ -70,8 +70,8 @@ docker run \<br>
 -e ES_PASSWORD="YOUR PASSWORD" \
 --network="host" \
 bigdata1:1.0 --num_pages=NUMBER_OF_PAGES_NEEDED
---page_size=REQUIRED_PAGE_SIZE
-On running the above command the program will begin execution and
+--page_size=REQUIRED_PAGE_SIZE <br>
+On running the above command, the program will begin execution and
 will extract the data from NYC Open data.<br>
 7. In order to view this data, you will need to login to the
 Elasticsearch instance.<br>
