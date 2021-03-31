@@ -4,6 +4,7 @@ This is a CLI application to extract Open Parking and Camera
 Violations dataset from NYC open data to an Elasticsearch instance
 hosted on AWS. Once the data has been extracted, it can be visualized
 in Kibana.
+<br>
 Pre-Requisites:
 1. Machine with docker installed. Eg: EC2 instance or localhost with
 docker installed.
@@ -13,7 +14,8 @@ the ES host address for access, and a username and password for
 authentication.
 3. APP token generated from the Socrata open data API to access and
 extract data.
-How to run the application:
+<br>
+**How to run the application:**
 1. Extract the zipped files.
 2. In the terminal, navigate to the directory of the unzipped file.
 3. Run the following command:
