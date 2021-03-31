@@ -3,7 +3,25 @@
 This is a CLI application to extract Open Parking and Camera
 Violations dataset from NYC open data to an Elasticsearch instance
 hosted on AWS. Once the data has been extracted, it can be visualized
-in Kibana.
+in Kibana.<br>
+
+Folder Structure:
+project01/
++-- Dockerfile
++-- requirements.txt
++-- src/
++-- +-- main.py
++-- assets/
++-- +-- kibanadashboard.png
++-- README
+
+![alt text](https://github.com/iaugustine/OpenDataElasticsearchExtraction/blob/main/project01/assets/kibanadashboard.png?raw=true)
+
+Dockerfile: Contains the instructions to build a docker container for the application.
+Requirements.txt: Contains list of dependencies for the application
+main.py: Python script which connects to NYC Open Data and an elasticsearch instance and extracts and loads data.
+kibanadashboard.png: A sample visualization dashboard once the recordsa are loaded.
+
 <br>
 Pre-Requisites:
 1. Machine with docker installed. Eg: EC2 instance or localhost with
